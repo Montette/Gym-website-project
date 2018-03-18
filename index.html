@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarExample" data-offset="400">
+
+    <!--   Registration modal window -->
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#registration" data-toggle="tab">SIGN UP</a></li>
+                        <li><a href="#login" data-toggle="tab">SIGN IN</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active fade in" id="registration">
+                            <h5 class="text-center modalH">Register New Account</h5>
+                            <form class="form">
+
+                                <div class="form-group row">
+                                    <div class="input-group col-sm-10 col-md-8 col-md-offset-2 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                                        <input type="text" class="form-control" id="nameField" placeholder="First Nime" /></div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="input-group col-sm-10 col-md-8 col-md-offset-2 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+
+                                        <input type="text" class="form-control" id="surnameField" placeholder="Last Name" /> </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="input-group col-sm-10 col-md-8 col-md-offset-2 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                        <input type="email" class="form-control" id="emailField" placeholder="Email adress" /> </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="input-group col-sm-10 col-md-8 col-md-offset-2 col-sm-offset-1 col-xs-10 col-xs-offset-1 ">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-phone"></i>
+                                        </span>
+                                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number" /> </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="input-group col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span> <input type="password" class="form-control" id="passwordField" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class=" input-group col-md-offset-2 col-sm-10 col-md-8 col-md-offset-2 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                        <label class="radio-inline">
+                                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+                                        </label></div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="checkbox col-md-offset-2 col-sm-10 col-md-8 col-md-offset-2 col-sm-offset-1 col-xs-10 col-xs-offset-1 ">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            I have read and accept the terms of use.
+                                        </label>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary black formButton btn-lg" role="button">SIGN UP</button></div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="login">
+                            <h5 class="text-center modalH">Sign in</h5>
+                            <div class="form-group row">
+                                <div class="input-group col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-envelope"></i>
+                                      </span>
+                                    <input type="email" class="form-control" id="nameField" placeholder="Email adress" /> </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="input-group col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span> <input type="password" class="form-control" id="nameField" placeholder="Password" />
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-primary black formButton btn-lg" role="button">SIGN IN</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--- Navigation --->
+
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbarExample" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbarLinks">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">ENERGIZE</a>
+            </div>
+            <div class="collapse navbar-collapse navbarLinks">
+                <ul class="nav  navbar-nav navbar-right">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#trainers">Trainers</a></li>
+                    <li><a href="#offer">Offer</a></li>
+                    <li><a href="#prices">Prices</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--- Carousel --->
+
+    <section class="home" id="home">
+        <div id="bestCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#bestCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bestCarousel" data-slide-to="1"></li>
+                <li data-target="#bestCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://images.unsplash.com/photo-1434596922112-19c563067271?ixlib=rb-0.3.5&s=a6c1d04bc196c7f04da02f525e696fae&auto=format&fit=crop&w=1950&q=80" alt="woman with ropes">
+                    <div class="hero">
+                        <hgroup>
+                            <h1>WELCOME TO ENERGIZE</h1>
+                            <p class="siteDescribtion">Health & Fitness Club</p>
+                        </hgroup>
+                        <button class="btn btn-primary btn-lg" role="button">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?ixlib=rb-0.3.5&s=36879189cc78e464b7f5fd2e7e24cde0&auto=format&fit=crop&w=1953&q=80" alt="woman on the gym in front of mirror">
+                    <div class="hero">
+                        <hgroup>
+                            <h1>WELCOME TO ENERGIZE</h1>
+                            <p class="siteDescribtion">Health & Fitness Club</p>
+                        </hgroup>
+                        <button class="btn btn-primary btn-lg" role="button">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&s=fe8db2c75163b990791ea484ad539899&auto=format&fit=crop&w=1950&q=80" alt="woman in sport clothes">
+                    <div class="hero">
+                        <hgroup>
+                            <h1>WELCOME TO ENERGIZE</h1>
+                            <p class="siteDescribtion">Health & Fitness Club</p>
+                        </hgroup>
+                        <button class="btn btn-primary btn-lg" role="button">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#bestCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+            <a class="right carousel-control" href="#bestCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+        </div>
+    </section>
+    <section class="about" id="about">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <figure><img class="img-responsive img-thumbnail" src="https://images.pexels.com/photos/863935/pexels-photo-863935.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="woman with cup looking through the window"></figure>
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe sed numquam distinctio eum dolore."</p>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 col-md-offset-1 aboutText">
+                    <h2>ABOUT ENERGIZE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In minus, reiciendis, temporibus aspernatur pariatur accusantium.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos vero accusamus fugiat nemo enim fuga quasi aliquam.</p><button class="btn btn-info btn-lg">LET US BEGIN</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers section -->
+
+    <section class="trainers" id="trainers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>OUR TRAINERS <br><small>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo.</small></h2>
+                </div>
+            </div>
+            <div id="trainersCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="https://images83.fotosik.pl/993/4b417c9440ef5cbe.jpg" alt="Asian woman in boxing gloves">
+                                    <div class="trainer-layer">
+                                        <div class="trainer-des text-center">
+                                            <h3 class="white">KAYOKO</h3>
+                                            <p class="proffesion">Martial Arts Trainer</p>
+                                            <div class="social-icon">
+                                                <div><a href="#" class="fa fa-facebook"></a></div>
+                                                <div><a href="#" class="fa fa-twitter "></a></div>
+                                                <div><a href="#" class="fa fa-instagram"></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="https://images84.fotosik.pl/993/3135f57d5dbe490c.jpg" alt="Blonde woman sitting on the stairs">
+                                    <div class="trainer-layer">
+                                        <div class="trainer-des text-center">
+                                            <h3 class="white">JENNIFER</h3>
+                                            <p class="proffesion">Fitness Trainer</p>
+                                            <div class="social-icon">
+                                                <div><a href="#" class="fa fa-facebook"></a></div>
+                                                <div><a href="#" class="fa fa-twitter"></a></div>
+                                                <div><a href="#" class="fa fa-instagram"></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="https://images82.fotosik.pl/995/a2c0216074b95f39.jpg" alt="Black man in white t-shirt">
+                                    <div class="trainer-layer">
+                                        <div class="trainer-des text-center">
+                                            <h3 class="white">ALEX</h3>
+                                            <p class="proffesion">Weightlifting Trainer</p>
+                                            <div class="social-icon">
+                                                <div><a href="#" class="fa fa-facebook"></a></div>
+                                                <div><a href="#" class="fa fa-twitter "></a></div>
+                                                <div><a href="#" class="fa fa-instagram"></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="https://images82.fotosik.pl/995/ccaf3df0a6077881.jpg" alt="Blonde woman in pink sport bra">
+                                    <div class="trainer-layer">
+                                        <div class="trainer-des text-center">
+                                            <h3 class="white">HANNAH</h3>
+                                            <p class="proffesion">Pole Dance Trainer</p>
+                                            <div class="social-icon">
+                                                <div><a href="#" class="fa fa-facebook"></a></div>
+                                                <div><a href="#" class="fa fa-twitter "></a></div>
+                                                <div><a href="#" class="fa fa-instagram"></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="https://images84.fotosik.pl/993/c78fd8d298dd2f13.jpg" alt="Muscle tatoo man without t-shirt">
+                                    <div class="trainer-layer">
+                                        <div class="trainer-des text-center">
+                                            <h3 class="white">SERGEI</h3>
+                                            <p class="proffesion">Crossfit Trainer</p>
+                                            <div class="social-icon">
+                                                <div><a href="#" class="fa fa-facebook"></a></div>
+                                                <div><a href="#" class="fa fa-twitter "></a></div>
+                                                <div><a href="#" class="fa fa-instagram"></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="https://images81.fotosik.pl/994/6b0d5d1c495c283a.jpg" alt="woman in doctor's goan and apple in her hand">
+                                    <div class="trainer-layer">
+                                        <div class="trainer-des text-center">
+                                            <h3 class="white">MONICA</h3>
+                                            <p class="proffesion">Dietitian</p>
+                                            <div class="social-icon">
+                                                <div><a href="#" class="fa fa-facebook"></a></div>
+                                                <div><a href="#" class="fa fa-twitter "></a></div>
+                                                <div><a href="#" class="fa fa-instagram"></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#trainersCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                <a class="right carousel-control" href="#trainersCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+            </div>
+        </div>
+    </section>
+
+    <!--    Newsletter section-->
+
+
+    <section class="newsletter">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="white">SIGN UP TO OUR NEWSLETTER</h2>
+                    <p>Get discounts for your personal fitness and gym services now.</p>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer" id="offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>OUR OFFER <br> <small>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo.</small></h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1518310790390-836058cb000b?ixlib=rb-0.3.5&s=99f76a1c9d18948c0abcab6cf3b46004&auto=format&fit=crop&w=750&q=80" alt="woman practicing aerobics">
+                        <div class="caption">
+                            <h3>Aerobic</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem architecto modi, sequi doloremque similique officia ab aspernatur laborum amet magni culpa quaerat, harum qui, quos quasi, atque. Eveniet, ipsum!</p>
+                            <button class="btn btn-info">More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="https://images.pexels.com/photos/416754/pexels-photo-416754.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="woman practicing chest with personal trainer">
+                        <div class="caption">
+                            <h3>Personal Trainings</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem architecto modi, sequi doloremque similique officia ab aspernatur laborum amet magni culpa quaerat, harum qui, quos quasi, atque. Eveniet, ipsum!</p>
+                            <button class="btn btn-info">More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1515646004980-ab2da7394a1c?ixlib=rb-0.3.5&s=bb0046122275cd1e5b488c3b6d05ce95&auto=format&fit=crop&w=1510&q=80" alt="woman dancing on the pole">
+                        <div class="caption">
+                            <h3>Pole Dance</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem architecto modi, sequi doloremque similique officia ab aspernatur laborum amet magni culpa quaerat, harum qui, quos quasi, atque. Eveniet, ipsum!</p>
+                            <button class="btn btn-info">More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1495555687398-3f50d6e79e1e?ixlib=rb-0.3.5&s=30c3025f65626cf10154704ba6770a0f&auto=format&fit=crop&w=750&q=80" alt="two men fighting boxing">
+                        <div class="caption">
+                            <h3>Combat Sport</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem architecto modi, sequi doloremque similique officia ab aspernatur laborum amet magni culpa quaerat, harum qui, quos quasi, atque. Eveniet, ipsum!</p>
+                            <button class="btn btn-info">More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="https://images.pexels.com/photos/17840/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt="a man doing squats with a barbell">
+                        <div class="caption">
+                            <h3>Crossfit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem architecto modi, sequi doloremque similique officia ab aspernatur laborum amet magni culpa quaerat, harum qui, quos quasi, atque. Eveniet, ipsum!</p>
+                            <button class="btn btn-info">More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="https://www.drkarafitzgerald.com/wp-content/uploads/2017/03/nutritionist-e1489099969737.jpeg" alt="doctor writing a diet">
+                        <div class="caption">
+                            <h3>Dietary Consultations</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quidem architecto modi, sequi doloremque similique officia ab aspernatur laborum amet magni culpa quaerat, harum qui, quos quasi, atque. Eveniet, ipsum!</p>
+                            <button class="btn btn-info">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="prices" id="prices">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="white">OUR PRICES</h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Healthy</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="cost">
+                                <p>$150</p>
+                            </div>
+                            <div class="costList">
+                                <ul>
+                                    <li>One Personal Trainer</li>
+                                    <li>Gym Services</li>
+                                    <li>10 Choosen Coursers </li>
+                                    <li>5 Thai Massages</li>
+                                    <li>4 Week Dietitian Care</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary black" data-toggle="modal" data-target="#myModal">SIGN UP NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Fit and Happy</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="cost">
+                                <p>$250</p>
+                            </div>
+                            <div class="costList">
+                                <ul>
+                                    <li>Two Personal Trainers</li>
+                                    <li>Gym Services</li>
+                                    <li>15 Choosen Coursers </li>
+                                    <li>10 Thai Massages</li>
+                                    <li>8 Week Dietitian Care</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary black" data-toggle="modal" data-target="#myModal">SIGN UP NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Perfect Body</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="cost">
+                                <p>$350</p>
+                            </div>
+                            <div class="costList">
+                                <ul>
+                                    <li>Three Personal Trainers</li>
+                                    <li>Gym Services</li>
+                                    <li>20 Choosen Coursers </li>
+                                    <li>15 Thai Massages</li>
+                                    <li>12 Week Dietitian Care</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary black" data-toggle="modal" data-target="#myModal">SIGN UP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <div id="partnersCarousel" class="carousel slide partnersCarousel" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="https://images82.fotosik.pl/995/026b83f70b2a441c.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="https://images82.fotosik.pl/995/dfc0b5d49de049fc.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="https://images83.fotosik.pl/993/76b92146d1b3ff72.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="https://images81.fotosik.pl/994/7e22f352c5cb20bd.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="https://images82.fotosik.pl/995/67b14a8d2f329495.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="thumbnail">
+
+                                    <img src="https://images84.fotosik.pl/993/75695bd0d799f5d5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-center">VISIT US</h2>
+                    <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti soluta, fugit quaerat obcaecati. Quae fuga sunt, consectetur, qui voluptatibus cupiditate quas optio cumque perferendis quos neque consequuntur fugit provident.</span>
+                        <span>Nostrum nam eius magnam consequatur, error possimus impedit rerum quo pariatur quia quisquam illum ex ipsam totam, aliquam dolor sapiente, voluptate iure fugit sit. Est odio perspiciatis quam earum eum.</span>
+                        <span>Mollitia, eius dicta deserunt vel, necessitatibus optio dolore impedit reiciendis ab perferendis id quia quod alias nulla molestiae! Atque et eligendi rerum rem nam, suscipit consectetur, unde illum reiciendis itaque!</span></p>
+                </div>
+                <div class="col-md-6">
+                    <figure><img src="https://bornonfifth.com/wp-content/uploads/2017/02/Photo-Credit_-The-DogPound.jpg" class="img-responsive thumbnail" alt="
+people exercising at the gym"></figure>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="col-md-12 img-responsive"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1474.494140932716!2d-71.06503579393598!3d42.34277319845314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a6fca5f07e5%3A0xd8a0f1627ded1472!2s1-109+Paul+Sullivan+Way%2C+Boston%2C+MA+02118%2C+Stany+Zjednoczone!5e0!3m2!1spl!2spl!4v1518630612511"></iframe></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="text-center">LINKS</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto maiores ipsam reprehenderit eius.</p>
+                    <a href="">
+                        <p>Terms of serice</p>
+                    </a>
+                    <a href="">
+                        <p>Career</p>
+                    </a>
+                    <a href="">
+                        <p>Payment</p>
+                    </a>
+                    <a href="">
+                        <p>FAQ</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-center">CONTACT</h6>
+                    <p>1-109 Paul Sullivan Way, Boston</p>
+                    <p>+73 888209282</p>
+                    <p>contact@energize.com</p>
+                    <h6 class="text-center">OPEN HOURS</h6>
+                    <p>Mon - Tue: 6:00 - 23:00</p>
+                    <p>Sat - Sun: 8:00 - 21:00</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-center">FOLLOW US</h6>
+                    <div class="social text-center">
+                        <div>
+                            <i class="fa fa-youtube"></i>
+                        </div>
+
+                        <div>
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div>
+                            <i class="fa fa-dribbble"></i>
+                        </div>
+                        <div>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                        <div>
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center copyrights">
+                    <p>Copyright © 2018 - All Rights Reserved - Domain Name</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
